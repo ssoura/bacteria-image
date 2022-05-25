@@ -25,7 +25,6 @@ def index(request):
         
         image_extensions=['ras','xwd', 'bmp', 'jpe', 'jpg', 'jpeg', 'xpm', 'ief', 'pbm', 'tif', 'gif', 'ppm', 'xbm', 'tiff', 'rgb', 'pgm', 'png', 'pnm']    
         
-        #if file.split('.')[1] not in image_extensions:
         result = 'Please upload an appropriate image file'
         img = open_image(file)
         pred = learner.predict(img)
